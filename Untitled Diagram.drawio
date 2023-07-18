@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-18T12:42:47.026Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="Ekwjl6yfLfX--XPPy1sZ" version="21.6.2" type="github" pages="21">
+<mxfile host="app.diagrams.net" modified="2023-07-18T13:40:51.330Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="dROu3P4lk6OjWDlo8VL_" version="21.6.2" type="github" pages="21">
   <diagram name="Page-1" id="KwKmOaSUNMyCv86T7x2U">
     <mxGraphModel dx="831" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -120,6 +120,45 @@
         </mxCell>
         <mxCell id="PredbNpVPD6zMxw3Z9yp-25" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Load a list of cards from the local machine&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="440" y="840" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-26" value="&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;for index,card := range cards{&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;fmt.Println(card)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;}&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1050" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.486;entryY=1.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PredbNpVPD6zMxw3Z9yp-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="1060" as="sourcePoint" />
+            <mxPoint x="380" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-29" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;index of this element&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;in the array&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="221" y="950" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="PredbNpVPD6zMxw3Z9yp-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1060" as="sourcePoint" />
+            <mxPoint x="440" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-32" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Current card we&#39;re&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;iterating over&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="414" y="935" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-33" value="&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Take the slice of &#39;cards&#39;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;and loop over it&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="535" y="968" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.407;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PredbNpVPD6zMxw3Z9yp-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="1060" as="sourcePoint" />
+            <mxPoint x="600" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-36" value="&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Run this one time for each card&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&amp;nbsp;in the slice&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="255" y="1155" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PredbNpVPD6zMxw3Z9yp-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.175;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PredbNpVPD6zMxw3Z9yp-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="1150" as="sourcePoint" />
+            <mxPoint x="410" y="1120" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
