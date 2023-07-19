@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-19T11:13:45.104Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="DpUJuQ1C5yCim19FbfSQ" version="21.6.2" type="github" pages="21">
+<mxfile host="app.diagrams.net" modified="2023-07-19T13:54:29.780Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="cu6qXCw7ca-clrSpwFp-" version="21.6.2" type="github" pages="21">
   <diagram name="Page-1" id="KwKmOaSUNMyCv86T7x2U">
     <mxGraphModel dx="831" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -239,6 +239,12 @@
         </mxCell>
         <mxCell id="EE4fRK-45uCwvJdGaHX5-3" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;A function with a receiver is like&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;a &quot;method&quot; -a function that belongs to&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;an &quot;instance&quot;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="500" y="2215" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EE4fRK-45uCwvJdGaHX5-4" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;func (d deck) print() {&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2390" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EE4fRK-45uCwvJdGaHX5-5" value="&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Any variable of type &quot;deck&quot;&#39;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;now gets acces to the&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&quot;print&quot; method&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="2500" width="250" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
