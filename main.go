@@ -4,4 +4,5 @@ import "fmt" // import statement used for: main package can acces other ones suc
 
 func main() {
 	fmt.Println("Hi there!")
+	
 }
