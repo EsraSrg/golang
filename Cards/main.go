@@ -2,8 +2,9 @@ package main
 
 func main(){
 	//var card string = "Ace of Spades" equals this:
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards,"Six of Spades")
+	//cards := deck{"Ace of Diamonds", newCard()}
+	cards:=newDeck()
+	
 
 	cards.print()
 
@@ -11,6 +12,4 @@ func main(){
 
 }
 
-func newCard() string {
-	return "Five of Diamonds"
-}
+
