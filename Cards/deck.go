@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"strings"
 
 )
@@ -46,4 +47,7 @@ func (d deck) toString() string { //receiver type deck
 	
 }
 
+func (d deck) saveToFile(filename string) error {
+	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
+}
  
