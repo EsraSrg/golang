@@ -6,7 +6,7 @@ import "fmt"
 // which is a slice of strings
 type deck []string 
 
-func newDeck () deck {
+func newDeck () deck {  // anytime someone calls newDeck ,they're gonna return a value of type deck.
 	cards:= deck{}
 
 	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
