@@ -1,0 +1,19 @@
+Go Syntax
+
+A Go file consists of the following parts:
+
+    Package declaration
+    Import packages
+    Functions
+    Statements and expressions
+
+    Declaring (Creating) Variables:
+
+    var variablename type = value
+     variablename := value 
+
+
+
+The const keyword declares the variable as "constant", which means that it is unchangeable and read-only.
+const CONSTNAME type = value
+
