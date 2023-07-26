@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var a, b, c int = 1, 3, 4
+	var (
+		a int
+		b int    = 1
+		c string = "hello"
+	)
 
 	fmt.Println(a)
 	fmt.Println(b)
