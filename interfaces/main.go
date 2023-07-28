@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
-type engslishBot struct{}
+type bot interface { // we use interfaces to define a method set or a function set right here.
+	getGreeting() string
+}
+
+type englishBot struct{}
 type spanishBot struct{}
 
 func main() {
@@ -11,18 +15,14 @@ func main() {
 	sb := spanishBot{}
 
 	printGreeting(eb)
-	// printGreeting(sb)
+	printGreeting(sb)
 
 }
-func printGreeting(eb englishBot) {
-	fmt.Println(eb.getGreeting())
+func printGreeting(b bot) {
+	fmt.Println(b.getGreeting())
 }
 
-// func printGreeting(sb spanishBot) {
-// 	fmt.Println(sb.getGreeting())
-// }
-
-func (engslishBot) getGreeting() string {
+func (englishBot) getGreeting() string {
 	// VERY custom logic for generating an english greeting
 
 	return "Hi there!"
