@@ -55,6 +55,94 @@ In Go, there are several ways to create a slice:
     Using the make() function
 
 
+    You can append elements to the end of a slice using the append()function.
+
+     When using slices, Go loads all the underlying elements into the memory.
+
+If the array is large and you need only a few elements, it is better to copy those elements using the copy() function.
+
+The copy() function creates a new underlying array with only the required elements for the slice. This will reduce the memory used for the program. 
+copy(dest, src) 
+
+LOOPS
+
+for statement1; statement2; statement3 {
+   // code to be executed for each iteration
+}
+
+The continue statement is used to skip one or more iterations in the loop. It then continues with the next iteration in the loop.
+The break statement is used to break/terminate the loop execution.
+
+range keyword:
+for index, value := array|slice|map {
+   // code to be executed for each iteration
+}
+
+FUNC
+
+func FunctionName(param1 type, param2 type) type {
+  // code to be executed
+  return output
+} 
+
+Go accepts recursion functions. A function is recursive if it calls itself and reaches a stop condition.
+
+STRUCTURES
+A struct (short for structure) is used to create a collection of members of different data types, into a single variable.
+
+While arrays are used to store multiple values of the same data type into a single variable, structs are used to store multiple values of different data types into a single variable.
+
+A struct can be useful for grouping data together to create records.
+type struct_name struct {
+  member1 datatype;
+  member2 datatype;
+  member3 datatype;
+  ...
+} 
+To access any member of a structure, use the dot operator (.) between the structure variable name and the structure member.
+
+
+
+MAPS
+Maps are used to store data values in key:value pairs.
+
+Each element in a map is a key:value pair.
+
+A map is an unordered and changeable collection that does not allow duplicates.
+
+The length of a map is the number of its elements. You can find it using the len() function.
+
+The default value of a map is nil.
+
+var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
+b := map[KeyType]ValueType{key1:value1, key2:value2,...}
+
+var a = make(map[KeyType]ValueType)
+b := make(map[KeyType]ValueType)
+
+You can access map elements by:
+Syntax
+value = map_name[key]
+
+Updating or adding an elements are done by:
+Syntax
+map_name[key] = value
+
+Removing elements is done using the delete() function.
+Syntax
+
+You can check if a certain key exists in a map using:
+Syntax
+val, ok :=map_name[key]
+
+
+
+
+
+
+
+
+
 
 
 
