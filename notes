@@ -17,3 +17,45 @@ A Go file consists of the following parts:
 The const keyword declares the variable as "constant", which means that it is unchangeable and read-only.
 const CONSTNAME type = value
 
+Output Functions
+If we want to print the arguments in new lines, we need to use \n.
+
+
+
+The Printf() function first formats its argument based on the given formatting verb and then prints them.
+
+Here we will use two formatting verbs:
+
+    %v is used to print the value of the arguments
+    %T is used to print the type of the arguments
+
+    DECLARE AN ARRAY
+    
+
+array_name := [length]datatype{values} // here length is defined
+
+or
+
+array_name := [...]datatype{values} // here length is inferred 
+
+Array Initialization
+
+If an array or one of its elements has not been initialized in the code, it is assigned the default value of its type.
+
+Tip: The default value for int is 0, and the default value for string is "".
+
+The len() function is used to find the length of an array.
+
+SLİCES
+unlike arrays, the length of a slice can grow and shrink as you see fit.
+In Go, there are several ways to create a slice:
+
+    Using the []datatype{values} format
+    Create a slice from an array
+    Using the make() function
+
+
+
+
+
+
