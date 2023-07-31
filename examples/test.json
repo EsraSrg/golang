@@ -1,0 +1,21 @@
+{
+    "user": {
+        "name": "Osman",
+        "surname": "AYDUR",
+        "age": 20,
+        "isMale": true,
+        "heigth": 193.20,
+        "favoriteSports": [
+            "basketball",
+            "volleyball"
+        ],
+        "subUsers": [
+            {
+                "name": "Esra"
+            },
+            {
+                "name": "Akif"
+            }
+        ]
+    }
+}

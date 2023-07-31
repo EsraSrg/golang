@@ -17,7 +17,6 @@ func main() {
 	}
 
 	io.Copy(os.Stdout, resp.Body)
-
 }
 
 func (logWriter) Write(bs []byte) (int, error) {
