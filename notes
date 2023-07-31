@@ -135,6 +135,11 @@ You can check if a certain key exists in a map using:
 Syntax
 val, ok :=map_name[key]
 
+INTERFACES 
+
+ınterfaces are a contract to help us manage types
+
+
 
 
 
