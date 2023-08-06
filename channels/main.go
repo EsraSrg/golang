@@ -20,8 +20,8 @@ func main() {
 		go checkLink(link,c) // go keyword for implementing go routines
 	}
 	
-	for i:=0; i<len(links); i++{
-		fmt.Println(<-c)
+	for {  //infinite loop
+		go checkLink(<-c , c)
 	}
 	
 }
@@ -30,11 +30,11 @@ func checkLink(link string , c chan string) {
 	_, err := http.Get(link) 
 	if err != nil {
 		fmt.Println(link + " might be down!")
-		c <- "might be down ı think" // sending data with channels
+		c <- link // sending data with channels
 		return
 	}
 	fmt.Println(link, "is up")
-	c <- "yep,its up"
+	c <- link
 }
 
 
