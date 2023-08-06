@@ -20,6 +20,12 @@ func main() {
 		go checkLink(link,c) // go keyword for implementing go routines
 	}
 	fmt.Println(<-c ) // sending data with channels
+	fmt.Println(<-c )
+	fmt.Println(<-c )
+	fmt.Println(<-c )
+	fmt.Println(<-c )
+
+	fmt.Println(<-c )
 }
 
 func checkLink(link string , c chan string) {
