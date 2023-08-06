@@ -1,143 +1,146 @@
-Go Syntax
+// Go Syntax
 
-A Go file consists of the following parts:
+// A Go file consists of the following parts:
 
-    Package declaration
-    Import packages
-    Functions
-    Statements and expressions
+//     Package declaration
+//     Import packages
+//     Functions
+//     Statements and expressions
 
-    Declaring (Creating) Variables:
+//     Declaring (Creating) Variables:
 
-    var variablename type = value
-     variablename := value 
-
-
-
-The const keyword declares the variable as "constant", which means that it is unchangeable and read-only.
-const CONSTNAME type = value
-
-Output Functions
-If we want to print the arguments in new lines, we need to use \n.
+//     var variablename type = value
+//      variablename := value 
 
 
 
-The Printf() function first formats its argument based on the given formatting verb and then prints them.
+// The const keyword declares the variable as "constant", which means that it is unchangeable and read-only.
+// const CONSTNAME type = value
 
-Here we will use two formatting verbs:
+// Output Functions
+// If we want to print the arguments in new lines, we need to use \n.
 
-    %v is used to print the value of the arguments
-    %T is used to print the type of the arguments
 
-    DECLARE AN ARRAY
+
+// The Printf() function first formats its argument based on the given formatting verb and then prints them.
+
+// Here we will use two formatting verbs:
+
+//     %v is used to print the value of the arguments
+//     %T is used to print the type of the arguments
+
+//     DECLARE AN ARRAY
     
 
-array_name := [length]datatype{values} // here length is defined
+// array_name := [length]datatype{values} // here length is defined
 
-or
+// or
 
-array_name := [...]datatype{values} // here length is inferred 
+// array_name := [...]datatype{values} // here length is inferred 
 
-Array Initialization
+// Array Initialization
 
-If an array or one of its elements has not been initialized in the code, it is assigned the default value of its type.
+// If an array or one of its elements has not been initialized in the code, it is assigned the default value of its type.
 
-Tip: The default value for int is 0, and the default value for string is "".
+// Tip: The default value for int is 0, and the default value for string is "".
 
-The len() function is used to find the length of an array.
+// The len() function is used to find the length of an array.
 
-SLİCES
-unlike arrays, the length of a slice can grow and shrink as you see fit.
-In Go, there are several ways to create a slice:
+// SLİCES
+// unlike arrays, the length of a slice can grow and shrink as you see fit.
+// In Go, there are several ways to create a slice:
 
-    Using the []datatype{values} format
-    Create a slice from an array
-    Using the make() function
-
-
-    You can append elements to the end of a slice using the append()function.
-
-     When using slices, Go loads all the underlying elements into the memory.
-
-If the array is large and you need only a few elements, it is better to copy those elements using the copy() function.
-
-The copy() function creates a new underlying array with only the required elements for the slice. This will reduce the memory used for the program. 
-copy(dest, src) 
-
-LOOPS
-
-for statement1; statement2; statement3 {
-   // code to be executed for each iteration
-}
-
-The continue statement is used to skip one or more iterations in the loop. It then continues with the next iteration in the loop.
-The break statement is used to break/terminate the loop execution.
-
-range keyword:
-for index, value := array|slice|map {
-   // code to be executed for each iteration
-}
-
-FUNC
-
-func FunctionName(param1 type, param2 type) type {
-  // code to be executed
-  return output
-} 
-
-Go accepts recursion functions. A function is recursive if it calls itself and reaches a stop condition.
-
-STRUCTURES
-A struct (short for structure) is used to create a collection of members of different data types, into a single variable.
-
-While arrays are used to store multiple values of the same data type into a single variable, structs are used to store multiple values of different data types into a single variable.
-
-A struct can be useful for grouping data together to create records.
-type struct_name struct {
-  member1 datatype;
-  member2 datatype;
-  member3 datatype;
-  ...
-} 
-To access any member of a structure, use the dot operator (.) between the structure variable name and the structure member.
+//     Using the []datatype{values} format
+//     Create a slice from an array
+//     Using the make() function
 
 
+//     You can append elements to the end of a slice using the append()function.
 
-MAPS
-Maps are used to store data values in key:value pairs.
+//      When using slices, Go loads all the underlying elements into the memory.
 
-Each element in a map is a key:value pair.
+// If the array is large and you need only a few elements, it is better to copy those elements using the copy() function.
 
-A map is an unordered and changeable collection that does not allow duplicates.
+// The copy() function creates a new underlying array with only the required elements for the slice. This will reduce the memory used for the program. 
+// copy(dest, src) 
 
-The length of a map is the number of its elements. You can find it using the len() function.
+// LOOPS
 
-The default value of a map is nil.
+// for statement1; statement2; statement3 {
+//    code to be executed for each iteration
+// }
 
-var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
-b := map[KeyType]ValueType{key1:value1, key2:value2,...}
+// The continue statement is used to skip one or more iterations in the loop. It then continues with the next iteration in the loop.
+// The break statement is used to break/terminate the loop execution.
 
-var a = make(map[KeyType]ValueType)
-b := make(map[KeyType]ValueType)
+// range keyword:
+// for index, value := array|slice|map {
+//    code to be executed for each iteration
+// }
 
-You can access map elements by:
-Syntax
-value = map_name[key]
+// FUNC
 
-Updating or adding an elements are done by:
-Syntax
-map_name[key] = value
+// func FunctionName(param1 type, param2 type) type {
+//   code to be executed
+//   return output
+// } 
 
-Removing elements is done using the delete() function.
-Syntax
+// Go accepts recursion functions. A function is recursive if it calls itself and reaches a stop condition.
 
-You can check if a certain key exists in a map using:
-Syntax
-val, ok :=map_name[key]
+// STRUCTURES
+// A struct (short for structure) is used to create a collection of members of different data types, into a single variable.
 
-INTERFACES 
+// While arrays are used to store multiple values of the same data type into a single variable, structs are used to store multiple values of different data types into a single variable.
 
-ınterfaces are a contract to help us manage types
+// A struct can be useful for grouping data together to create records.
+// type struct_name struct {
+//   member1 datatype;
+//   member2 datatype;
+//   member3 datatype;
+//   ...
+// } 
+// To access any member of a structure, use the dot operator (.) between the structure variable name and the structure member.
+
+
+
+// MAPS
+// Maps are used to store data values in key:value pairs.
+
+// Each element in a map is a key:value pair.
+
+// A map is an unordered and changeable collection that does not allow duplicates.
+
+// The length of a map is the number of its elements. You can find it using the len() function.
+
+// The default value of a map is nil.
+
+// var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
+// b := map[KeyType]ValueType{key1:value1, key2:value2,...}
+
+// var a = make(map[KeyType]ValueType)
+// b := make(map[KeyType]ValueType)
+
+// You can access map elements by:
+// Syntax
+// value = map_name[key]
+
+// Updating or adding an elements are done by:
+// Syntax
+// map_name[key] = value
+
+// Removing elements is done using the delete() function.
+// Syntax
+
+// You can check if a certain key exists in a map using:
+// Syntax
+// val, ok :=map_name[key]
+
+// INTERFACES 
+
+// ınterfaces are a contract to help us manage types
+
+// CHANNELS: channels are the only way that we have to communicate between
+// go routines
 
 
 
