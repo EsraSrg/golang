@@ -13,18 +13,24 @@ func main() {
 		"http://golang.org",
 		"http://amazon.com",
 	}
+
+	c:=make(chan string) // creating channel.
+
 	for _, link := range links {
-		checkLink(link)
+		go checkLink(link,c) // go keyword for implementing go routines
 	}
+	fmt.Println(<-c ) // sending data with channels
 }
 
-func checkLink(link string) {
-	_, err := http.Get(link)
+func checkLink(link string , c chan string) {
+	_, err := http.Get(link) 
 	if err != nil {
 		fmt.Println(link + " might be down!")
+		c <- "might be down ı think" // sending data with channels
 		return
 	}
 	fmt.Println(link, "is up")
+	c <- "yep,its up"
 }
 
 
